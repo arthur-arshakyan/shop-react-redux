@@ -1,0 +1,43 @@
+.menu {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu .icon {
+    display: flex;
+    color: black;
+    font-size: 18px;
+    /* transition: width 2s, height 2s, background-color 2s, rotate 2s;
+    transition-duration: 4s; */
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    font-size: 14px;
+    border-radius: 0.7rem;
+}
+
+.menuItem .content {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.menuItem:hover {
+    cursor: pointer;
+}
+
+.menuItem::before {
+    content: '';
+    width: 8px;
+    height: 100%;
+    background: #2C3B41;
+}

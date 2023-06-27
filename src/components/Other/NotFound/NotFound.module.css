@@ -1,0 +1,33 @@
+.notFound {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(222, 215, 215);
+}
+
+.container {
+    padding: 25px 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container h1 {
+    text-align: center;
+    color: teal;
+}
+
+.notFound span {
+    font-size: 36px;
+    color: rgb(31, 55, 47);
+}
+
+.notFound li {
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.notFound p {
+    font-size: 26px;
+}

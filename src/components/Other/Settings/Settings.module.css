@@ -1,0 +1,23 @@
+.settings {
+    width: 96%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.settings h1{
+    color: teal;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+
+.settings h2 {
+    color: rgb(6, 169, 169);
+    margin: 20px 0;
+}
+
+.settings li {
+    margin: 10px 0;
+    font-size: 22px;
+    color: whitesmoke;
+}

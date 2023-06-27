@@ -1,0 +1,78 @@
+.addProductModal {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+
+}
+
+.modalContent{
+    width: 700px;
+    background: rgb(44,59,65);
+    background: linear-gradient(90deg, rgba(44,59,65,1) 25%, rgba(76,128,139,1) 50%, rgba(34,45,50,1) 75%);
+    padding: 30px 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    animation-name: modal;
+    animation-duration: .5s;
+}
+
+.modalContent h1 {
+    color: rgb(41, 75, 75);
+}
+
+.modalContent form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modalContent form input, textarea {
+    padding: 5px 10px;
+    border-radius: 10px 10px;
+    border: 1px solid rgb(214, 205, 223);
+    outline: unset;
+    background: unset;
+    resize: none;
+    width: 300px;
+}
+
+input::placeholder {
+    color: gainsboro;
+}
+
+textarea::placeholder {
+    color: gainsboro;
+}
+
+.modalContent button {
+    border: unset;
+    border-radius: 10px;
+    padding: 3px 5px;
+    background: unset;
+    border: 1px solid rgb(214, 205, 223);
+    font-size: 20px;
+    /* background-color: rgb(169, 183, 178); */
+}
+
+@keyframes modal {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

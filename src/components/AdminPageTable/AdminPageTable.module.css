@@ -1,0 +1,83 @@
+.table {
+    margin-top: 25px;
+    width: 100%;
+    border-collapse:separate; 
+    border-spacing: 0px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #222D32;
+}
+
+.table img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+
+.table thead {
+    color: white;
+    background-color: #2C3B41;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table td, th {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.table tr {
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+.table tr:first-child td:first-child { border-top-left-radius: 10px; }
+tr:first-child td:last-child { border-top-right-radius: 10px; }
+
+.table tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+.table tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+.table tr th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.table tr th:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.table .tableIcon{
+    cursor: pointer;
+    font-size: 26px;
+    margin: 0 7px;
+    transition: all 0.3s ease;
+}
+
+.table .tableIcon:hover {
+    color: teal;
+}
+
+.activeIcon {
+    color: red;
+}
+
+.td {
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}

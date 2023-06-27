@@ -1,0 +1,30 @@
+.contacts {
+    width: 96%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.contacts h1{
+    color: teal;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+
+.contacts h2 {
+    color: rgb(6, 169, 169);
+    margin: 20px 0;
+}
+
+.contacts div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: whitesmoke;
+}
+
+.contacts .text {
+    margin: 3px 0;
+    color: rgb(6, 169, 169);
+}

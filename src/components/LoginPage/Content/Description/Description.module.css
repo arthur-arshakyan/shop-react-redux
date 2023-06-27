@@ -1,0 +1,62 @@
+.description {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 50px;
+}
+
+.description p {
+    color: rgb(8, 57, 92);
+    width: 40%;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    margin: 50px 0 15px 0;
+}
+
+.description h1{
+    font-family: 'Times New Roman';
+    font-size: 75px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    /* color: #f899a1; */
+    color: #f86a76;
+}
+
+.description button {
+    width: 200px;
+    height: 50px;
+    /* background: #2096ae; */
+    background: #8dd5e4;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.description button:hover {
+    background-color: #f899a1;
+}
+
+.description button a {
+    text-decoration: none;
+    /* color: #f899a1; */
+    color: #f86a76;
+    transition: .3s ease;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    padding: 10px 48px;
+}
+
+.description button a:hover {
+    color: rgb(255, 255, 255);
+}

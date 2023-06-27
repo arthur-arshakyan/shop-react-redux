@@ -1,0 +1,20 @@
+.shopContent {
+    width: 90%;
+    margin: 30px auto 0;
+    padding: 10px 0 20px;
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.opacity{
+    opacity: .2;
+    pointer-events: none;
+}
+
+.noMatches {
+    width: 100%;
+    font-size: 42px;
+    text-align: center;
+    color: #c7a885;
+}

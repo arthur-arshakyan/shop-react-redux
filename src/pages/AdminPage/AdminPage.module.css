@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+}
+
+.main {
+    padding: 15px;
+}
+
+.main h1 {
+    color: teal;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+
+.main .dashboards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .dashboards .square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    margin: 25px 15px;
+    gap: 10px;
+    background-color: #222D32;
+    border-radius: 10px 10px;
+}
+
+.main .dashboards .square .icon {
+    font-size: 40px;
+    /* color: #2C3B41; */
+    color: teal;
+}
+
+.main .dashboards .square p {
+    color: white;
+    font-size: 20px;
+}
+
+.shopIcon {
+    color: teal;
+    font-size: 50px;
+}
+
+.linkToShop {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    padding: 5px 8px;
+}
+
+.linkToShop:hover {
+    color: teal;
+    background-color: #ffff;
+}

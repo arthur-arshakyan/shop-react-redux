@@ -1,0 +1,84 @@
+.cartItemContent {
+    position: relative;
+    height: 135px;
+    /* padding: 16px 0; */
+    /* border: 1px solid red; */
+    background-color:#f1f1f1;
+    border-radius: 20px;
+    margin: 25px 0;
+    display: flex;
+}
+
+.cartImg {
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    background-color: #d8c4aa;
+}
+
+.cartMiddle {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.middleTop {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.countBox {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.countBox span:nth-child(1){
+    padding: 7px 25px;
+    background-color: #e6e6e6;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.countBox span:nth-child(1):hover{
+    background-color: #6b6464;
+}
+
+
+.countBox span:nth-child(2){
+    font-weight: bold;
+}
+
+.countBox span:nth-child(3){
+    padding: 7px 23px;
+    background-color: #e6e6e6;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.countBox span:nth-child(3):hover {
+    background-color: #6b6464;
+
+}
+
+.deleteIcon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: rgb(187, 44, 44);
+
+}
+
+.deleteIcon:hover {
+    color: rgb(235, 49, 49);
+}

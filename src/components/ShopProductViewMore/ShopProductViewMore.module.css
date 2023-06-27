@@ -1,0 +1,103 @@
+.modalBg {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+  }
+
+.modalContent{
+    width: 50%;
+    height: 60%;
+    /* background: rgb(44,59,65);
+    background: linear-gradient(90deg, rgba(44,59,65,1) 25%, rgba(76,128,139,1) 50%, rgba(34,45,50,1) 75%); */
+    background: rgb(241,241,241);
+background: linear-gradient(90deg, rgba(241,241,241,1) 33%, rgba(89,110,121,1) 100%);
+
+    padding: 30px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    animation-name: modal;
+    animation-duration: .5s;
+}
+
+@keyframes modal {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.title {
+    font-size: 48px;
+    color: #777573;
+    text-align: center;
+}
+
+.content {
+    margin: 25px 0;
+    display: flex;
+    gap: 25px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left img {
+    object-fit: contain;
+    width: 300px;
+    height: 250px;
+}
+
+.left p{
+    font-weight: bold;
+    font-size: 32px;
+    color: #777573;
+    margin-left: 40px;
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.right p{
+    font-size: 28px;
+    color: rgb(68, 70, 72);
+}
+
+.right button {
+    font-size: 22px;
+    width: 200px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #e0deda;
+    transition: all 0.3s ease;
+    color: #777573;
+    margin: 0 auto;
+}
+
+.right button:hover {
+    background-color: rgb(115, 112, 112);
+    color: #ffffff;
+}
