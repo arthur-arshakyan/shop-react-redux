@@ -21,7 +21,7 @@ const ShopCartItem = ({product}) => {
         <div className={styles.cartMiddle}>
             <div className={styles.middleTop}>
                 <h2>{product?.title}</h2>
-                <h3>$ {product?.total.toFixed(2)}</h3>
+                <h3>$ {Number(product?.total).toFixed(2)}</h3>
             </div>
             <div className={styles.countBox}>
                 <span onClick={() => dispatch(fetchDecreaseProduct({product, id: currentUser.id}))}>-</span>
