@@ -19,7 +19,7 @@ const AppRouter = () => {
     return (
         <div>
             <Routes>
-                <Route path={'/homePage'} element={<Shop/>}/>
+                <Route path={'/shop-react-redux'} element={<Shop/>}/>
                 <Route path={'/'} element={<Login/>}/>
                 <Route path={'/registration'} element={<Registration/>}/>
                 {
