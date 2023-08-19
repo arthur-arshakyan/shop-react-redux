@@ -43,7 +43,6 @@ const ShopHeader = () => {
     function handleSubmit(e){
         e.preventDefault();
         const {search} = e.target;
-        // console.log(e.target);
         checkEqual(search.value,false,() => dispatch(resetFilteredProducts()))
     }
     
@@ -52,19 +51,15 @@ const ShopHeader = () => {
         <main className={styles.shopHeader}>
             <header className={styles.header}>
                 <div className={styles.content}>
-                    {/* <div className={styles.logoIcon}><GiShoppingBag/></div> */}
                     <div className={styles.logoIcon}>
                         L O G O
                     </div>
-                    {/* <div className={styles.search}> */}
                         <form onSubmit={(e)=>handleSubmit(e)} className={styles.search}>
                             <input type="text" name='search' placeholder='Search products' onInput={(e)=> inputHandler(e)}/>
                             <button className={styles.searchIcon}>
                                 <FiSearch/>
                             </button>
                         </form>
-                    {/* </div> */}
-                    {/* cartAndUser */}
                     {
                         currentUser 
                             ?
@@ -72,12 +67,9 @@ const ShopHeader = () => {
                                 <div onClick={() => setCartModal(true)} className={styles.cartIcon}>
                                     <p className={styles.productCount}>{currentUser.cartProducts.length}</p>
                                     <GiShoppingCart/>
-                                    {/* onclicki vaxt modal carti */}
                                 </div>
                                 <div onClick={() => setLogout(!logout)}>
-                                    {/* onclicki vaxt modal pti bacvi vor logout ylni*/}
                                     <img src={currentUser?.avatar} alt="img" className={styles.userImg}/>
-                                    {/* stex */}
                                 </div>
                             </div>
                             :

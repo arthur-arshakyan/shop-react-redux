@@ -24,7 +24,6 @@ export const fetchDeleteUser = createAsyncThunk(
     'users/fetchDeleteUser',
     async (id)=>{
         const result = await sendRequestDelete(`http://localhost:3001/users/${id}`)
-        console.log(id)
         return id
     }
 )
@@ -33,7 +32,6 @@ export const fetchEditUser = createAsyncThunk(
     'users/fetchEditUser',
     async (data)=>{
         const result = await sendRequestPatch(`http://localhost:3001/users/${data.id}`,data)
-        console.log(result)
         return result
     }
 )
@@ -42,7 +40,6 @@ export const fetchAddBlockUser = createAsyncThunk(
     'users/fetchAddBlockUser',
     async (data)=>{
         const result = await sendRequestPost('http://localhost:3001/blockedUsers',data)
-        console.log(result)
         return result
     }
 )
@@ -51,7 +48,6 @@ export const fetchDelBlockUser = createAsyncThunk(
     'users/fetchDelBlockUser',
     async (id)=>{
         const result = await sendRequestDelete(`http://localhost:3001/blockedUsers/${id}`)
-        console.log(id)
         return id
     }
 )

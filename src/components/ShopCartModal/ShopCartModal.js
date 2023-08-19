@@ -12,7 +12,6 @@ const ShopCartModal = ({setCartModal}) => {
   return (
     <div onClick={() => setCartModal(false)} className={styles.modalBg}>
         <div onClick={(event) => event.stopPropagation()} className={styles.modalContent}>
-            {/* top */}
             {
                 currentUser?.cartProducts?.length
                     ?
@@ -20,9 +19,7 @@ const ShopCartModal = ({setCartModal}) => {
                     :
                     <p className={styles.cartEmpty}>Cart is empty</p>
             }
-            {/* bottom */}
             <div className={styles.carts}>
-                {/* items */}
                 {
                     currentUser?.cartProducts?.map(product => <ShopCartItem key={product.id} product={product}/>)
                 }

@@ -9,7 +9,6 @@ import ShopContent from '../../components/ShopContent/ShopContent'
 const Shop = () => {
     const dispatch = useDispatch()
     const {productsData, filteredProducts} = useSelector(selectProducts)
-    console.log(filteredProducts);
 
     useEffect(() => {
         dispatch(fetchProducts())

@@ -48,7 +48,7 @@ const AdminPage = () => {
         </div>
         <div className={styles.square}>
           <div className={styles.shopIcon}><AiFillShop/></div>
-          <Link to='/homePage' className={styles.linkToShop}>Go to Shop</Link>
+          <Link to='/shop-react-redux' className={styles.linkToShop}>Go to Shop</Link>
         </div>
       </section>
 

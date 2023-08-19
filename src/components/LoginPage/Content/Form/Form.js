@@ -31,7 +31,7 @@ const Form = () => {
 
     if(findUser){
       dispatch(logIn(findUser))
-      navigate("/homePage", { replace: true })
+      navigate("/shop-react-redux", { replace: true })
     }
 
     if(!findAdmin && !findUser){

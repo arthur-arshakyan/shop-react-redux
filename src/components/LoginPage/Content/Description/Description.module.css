@@ -24,14 +24,12 @@
     font-size: 75px;
     padding-left: 20px;
     letter-spacing: 2px;
-    /* color: #f899a1; */
     color: #f86a76;
 }
 
 .description button {
     width: 200px;
     height: 50px;
-    /* background: #2096ae; */
     background: #8dd5e4;
     border: none;
     margin-bottom: 10px;
@@ -49,7 +47,6 @@
 
 .description button a {
     text-decoration: none;
-    /* color: #f899a1; */
     color: #f86a76;
     transition: .3s ease;
     font-size: 22px;

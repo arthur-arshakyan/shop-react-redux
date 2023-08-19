@@ -67,7 +67,6 @@ export const fetchDeleteCartProduct = createAsyncThunk(
     async (data) => {
         const user = await sendRequestGet(`http://localhost:3001/users/${data.id}`)
         user.cartProducts = user.cartProducts.filter(prod => prod.id !== data.product.id)
-        console.log('delete icon-ov');
 
         const result = await sendRequestPatch(`http://localhost:3001/users/${data.id}`,
             {
@@ -83,7 +82,6 @@ export const fetchDecreaseProduct = createAsyncThunk(
     async (data) => {
         const user = await sendRequestGet(`http://localhost:3001/users/${data.id}`)
         if(data.product.productQuantity === 1){
-            console.log('delete 1-ov');
             user.cartProducts = user.cartProducts.filter(prod => prod.id !== data.product.id)
         }else{
             user.cartProducts = user.cartProducts.map(prod => prod.id === data.product.id

@@ -3,7 +3,6 @@ import ShopContentProduct from '../ShopContentProduct/ShopContentProduct'
 import styles from './ShopContent.module.css'
 
 const ShopContent = ({productsData, filteredProducts}) => {
-  console.log(filteredProducts);
 
   return (
     <section className={filteredProducts.opacity? `${styles.opacity} ${styles.shopContent}` : styles.shopContent}>

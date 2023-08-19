@@ -14,10 +14,8 @@
 .modalContent{
     width: 50%;
     height: 75%;
-    /* background: rgb(44,59,65);
-    background: linear-gradient(90deg, rgba(44,59,65,1) 25%, rgba(76,128,139,1) 50%, rgba(34,45,50,1) 75%); */
     background: rgb(241,241,241);
-background: linear-gradient(90deg, rgba(241,241,241,1) 33%, rgba(89,110,121,1) 100%);
+    background: linear-gradient(90deg, rgba(241,241,241,1) 33%, rgba(89,110,121,1) 100%);
     padding: 30px 40px;
     border-radius: 20px;
     display: flex;
@@ -63,7 +61,6 @@ background: linear-gradient(90deg, rgba(241,241,241,1) 33%, rgba(89,110,121,1) 1
 
 .carts {
     width: 100%;
-    /* height: 90%; */
 }
 
 

@@ -6,7 +6,6 @@ import styles from './ShopContentProduct.module.css'
 import ShopProductViewMore from '../ShopProductViewMore/ShopProductViewMore'
 
 const ShopContentProduct = ({product}) => {
-    console.log(product);
     const {currentUser} = useSelector(selectUsers)
     const dispatch = useDispatch()
     const [viewModal, setViewModal] = useState(false)

@@ -62,7 +62,6 @@ textarea::placeholder {
     background: unset;
     border: 1px solid rgb(214, 205, 223);
     font-size: 20px;
-    /* background-color: rgb(169, 183, 178); */
 }
 
 @keyframes modal {
