@@ -76,11 +76,8 @@ tr:first-child td:last-child { border-top-right-radius: 10px; }
 
 .td {
     height: 125px;
-    gap: 15px;
-}
-
-.td > div{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }

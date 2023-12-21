@@ -14,33 +14,57 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-#### `npm run server`
+### `npm test`
 
-This project utilizes a server to provide backend functionalities. Follow the instructions below to run the server and ensure a smooth operation of the online shop application.
-Open [http://localhost:3001/users](http://localhost:3001/users) to view it in your browser.
-Open [http://localhost:3001/products](http://localhost:3001/products) to view it in your browser.
-Open [http://localhost:3001/blockedUsers](http://localhost:3001/blockedUsers) to view it in your browser.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `npm run build`
 
-##### Online Shop Project
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Welcome to the Online Shop project! This project is built using React and Redux to provide a seamless online shopping experience. Below, you'll find information on how to get started, administrator login credentials, and how client side can add new users by signing up.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-###### Administrator/User Login
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-To access the administrator dashboard, use the following credentials:
+### `npm run eject`
 
-Login: Admin1
-Password: Admin123
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Adding New Users:
-Clients can add new users to the project by following these steps:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1. Navigate to the sign-up page.
-2. Fill in the required information, including a valid email address and password.
-3. Click the "Sign Up" button to create a new user account.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Now, the newly signed-up user can log in using their credentials and enjoy the online shopping experience.
-Feel free to explore and enhance the project as needed. Happy shopping!
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

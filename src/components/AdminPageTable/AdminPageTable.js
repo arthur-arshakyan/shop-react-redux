@@ -61,26 +61,10 @@ const AdminPageTable = () => {
                         <td>{user?.email}</td>
                         <td>{user?.password.split('').fill('*', 3, -1) }</td>
                         <td className={styles.td}>
-                            {
-                                user.admin
-                                ?
-                                <div>
-                                    <div><BiEdit className={styles.tableIcon} onClick={() => showModal(user?.id)}/></div>
-                                    <div><AiOutlineDelete className={styles.tableIcon} onClick={() => deleteUser(user?.id)}/></div>
-                                </div>
-                                :
-                                <div>
-                                    <div onClick={(event) => blockUser(event, user?.id)}><TbLock className={styles.tableIcon} /></div>
-                                    <div onClick={(event) => unBlockUser(event, user?.id)}><TbLockOpen className={styles.tableIcon}/></div>
-                                    <div><BiEdit className={styles.tableIcon} onClick={() => showModal(user?.id)}/></div>
-                                    <div><AiOutlineDelete className={styles.tableIcon} onClick={() => deleteUser(user?.id)}/></div>   
-                                </div>
-
-                            }
-                            {/* <div onClick={(event) => blockUser(event, user?.id)}><TbLock className={styles.tableIcon} /></div>
+                            <div onClick={(event) => blockUser(event, user?.id)}><TbLock className={styles.tableIcon} /></div>
                             <div onClick={(event) => unBlockUser(event, user?.id)}><TbLockOpen className={styles.tableIcon}/></div>
                             <div><BiEdit className={styles.tableIcon} onClick={() => showModal(user?.id)}/></div>
-                            <div><AiOutlineDelete className={styles.tableIcon} onClick={() => deleteUser(user?.id)}/></div> */}
+                            <div><AiOutlineDelete className={styles.tableIcon} onClick={() => deleteUser(user?.id)}/></div>
                         </td>
                     </tr>
                 ))
